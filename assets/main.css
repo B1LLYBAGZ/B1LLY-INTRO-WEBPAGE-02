@@ -1,0 +1,348 @@
+/*//WHOLE PROJECT/*/
+
+/* whole project color theam  */
+:root {
+  --main-brightred: #ff0000;
+  --main-brightyellow: #cfde00;
+  --main-black: #000000;
+  --main-gray: #575757;
+}
+
+/* Browser Zero/"reset" */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box as well as my font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/*"seting the font size to 62.5% makes it easy to calculate to REM units"-StackOverflow was the reason i decided to add this to my html selector*/
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* these media querys were also sorced from "stackoverflow.com" the html slector above font-size was baseed on these media querys */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/*//WHOLE PROJECT*/
+/*//BODY/FONT SIZING*/
+
+body {
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem; /*  = 20px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-brightred);
+}
+
+h1,
+h2 {
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-brightred);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/*//BODY/FONT SIZING*/
+/*//NAVBAR*/
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-brightyellow);
+  box-shadow: var(--main-black);
+  z-index: 10;
+  font-family: "Metal Mania", system-ui;
+}
+
+.nav-list {
+  display: flex;
+  margin: auto;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.nav-list a:hover {
+  background: var(--main-black);
+}
+
+/*//NAVBAR*/
+/*//ABOUT*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-black);
+  background-image: linear-gradient(
+    60deg,
+    var(--main-gray) 0%,
+    var(--main-black) 100%
+  );
+}
+
+.about > p {
+  font-size: 30px;
+  :root {
+    --main-brightred: #ff0000;
+    --main-brightyellow: #cfde00;
+    --main-black: #000000;
+    --main-gray: #575757;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px; /* 2rem */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-brightred);
+  }
+
+  h1,
+  h2 {
+    font-weight: 1000;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--main-brightred);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+/*//ABOUT*/
+/*//WORX*/
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-black);
+}
+
+.projects-section-top {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-brightred);
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-top {
+    font-size: 4rem;
+  }
+}
+
+.projects-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+.pro-img {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background: var(--main-gray);
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: var(--main-brightyellow);
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+/*//WORX*/
+/*//INFO*/
+
+.INFO-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background-color: var(--main-black);
+  background-image: linear-gradient(
+    60deg,
+    var(--main-gray) 0%,
+    var(--main-black) 100%
+  );
+}
+
+.info-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.INFO-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.INFO-details:hover {
+  transform: translateY(8px);
+}
+
+/*//INFO*/
+/*//FOOTER*/
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: black;
+  border-top: 4px solid var(--main-brightyellow);
+  color: #ff0000;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+/*//THE END//@B1LLYBAGS//2024//*/
+/*//THE END//@B1LLYBAGS//2024//*/
