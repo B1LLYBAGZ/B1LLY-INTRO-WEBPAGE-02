@@ -14,13 +14,13 @@
   padding: 0;
 }
 
-/* box as well as my font sizing */
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-/*"seting the font size to 62.5% makes it easy to calculate to REM units"-StackOverflow was the reason i decided to add this to my html selector*/
+
+/*"seting the font size to 62.5% makes it easy to calculate to REM units"-StackOverflow this is the reason i decided to add this to my html selector*/
 
 html {
   box-sizing: border-box;
@@ -28,7 +28,6 @@ html {
   font-size: 62.5%;
 }
 
-/* these media querys were also sorced from "stackoverflow.com" the html slector above font-size was baseed on these media querys */
 @media (max-width: 75em) {
   html {
     font-size: 60%;
