@@ -337,6 +337,7 @@ footer {
   background: black;
   border-top: 4px solid var(--main-brightyellow);
   color: #ff0000;
+  flex-wrap: wrap;
 }
 
 footer i {
