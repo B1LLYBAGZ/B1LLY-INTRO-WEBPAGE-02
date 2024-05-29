@@ -60,6 +60,12 @@ body {
   text-shadow: 0px 11px 10px rgba(18, 18, 18, 0.8);
 }
 
+.pman {
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 h1,
 h2 {
   font-family: "Nosifer", sans-serif;
