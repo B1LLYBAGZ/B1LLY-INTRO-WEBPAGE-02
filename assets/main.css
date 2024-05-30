@@ -216,7 +216,9 @@ img {
 .projects-section-top {
   max-width: 640px;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-brightred);
+  box-shadow: rgba(255, 0, 0, 0.791) 0px 13px 27px -5px,
+    rgba(95, 0, 0, 0.575) 0px 8px 16px -8px;
+  border-radius: 7px;
 }
 
 @media (max-width: 28.75em) {
@@ -246,7 +248,7 @@ img {
 }
 
 .project {
-  background: var(--main-gray);
+  background: var(--main-black);
   border-radius: 7px;
 }
 
@@ -276,6 +278,14 @@ img {
     rgba(95, 0, 0, 0.575) 0px 8px 16px -8px;
 }
 
+.project-name:hover {
+  background: var(--main-brightyellow);
+}
+
+.project-name:hover {
+  background: var(--main-brightyellow);
+}
+
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -284,7 +294,6 @@ img {
 
 .btn-show-all {
   font-size: 2rem;
-  background: var(--main-gray);
   transition: background 0.3s ease-out;
   box-shadow: rgba(255, 0, 0, 0.791) 0px 13px 27px -5px,
     rgba(95, 0, 0, 0.575) 0px 8px 16px -8px;
