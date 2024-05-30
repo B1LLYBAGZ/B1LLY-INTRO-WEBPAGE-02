@@ -3,7 +3,7 @@
 /* whole project color theam  */
 :root {
   --main-brightred: #ff0000;
-  --main-brightyellow: #cfde00;
+  --main-brightyellow: #d4eb00;
   --main-black: #000000;
   --main-gray: #575757;
 }
@@ -98,10 +98,9 @@ img {
 
 .img-about {
   width: 330px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   margin-bottom: 50px;
+  margin-top: 10px;
 }
 
 /*//BODY/FONT SIZING*/
@@ -137,8 +136,8 @@ img {
 
 .nav-list a {
   display: block;
-  font-size: 3rem;
-  padding: 2rem;
+  font-size: 3.5rem;
+  padding: 1.5rem;
 }
 
 .nav-list a:hover {
@@ -327,8 +326,7 @@ img {
 }
 
 .INFO-details {
-  font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
+  font-size: 2.5rem;
   transition: transform 0.3s ease-out;
 }
 
